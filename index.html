@@ -630,7 +630,11 @@
     btn.classList.add('active');
   }
 
-  document.querySelectorAll('.reveal').forEach(el => el.classList.add('hidden'));
+  // Reveal animation — exclude elements inside tab-content (they start hidden by display:none)
+  document.querySelectorAll('.reveal').forEach(el => {
+    if (!el.closest('.tab-content')) el.classList.add('hidden');
+  });
+
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -639,4 +643,11 @@
         revealObserver.unobserve(entry.target);
       }
     });
-  }, { t
+  }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(el => {
+    if (!el.closest('.tab-content')) revealObserver.observe(el);
+  });
+</script>
+</body>
+</html>
