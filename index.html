@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Your Installation Is Almost Confirmed | Melbourne Gas & Air Conditioning Group</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 <style>
   :root {
     --ink: #0f1f35;
@@ -28,7 +28,7 @@
   }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
-  body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--ink); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+  body { font-family: 'Open Sans', sans-serif; background: var(--cream); color: var(--ink); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
 
   .reveal { opacity: 1; transform: translateY(0); transition: opacity 0.65s cubic-bezier(.16,1,.3,1), transform 0.65s cubic-bezier(.16,1,.3,1); }
   .reveal.hidden { opacity: 0; transform: translateY(28px); }
@@ -38,17 +38,17 @@
   .reveal-delay-3 { transition-delay: 0.3s; }
 
   /* HEADER */
-  .header { position: fixed; top: 0; left: 0; right: 0; z-index: 200; background: rgba(255,255,255,0.96); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border-light); display: flex; align-items: center; justify-content: space-between; padding: 0 40px; height: 70px; transition: box-shadow 0.3s; }
+  .header { position: fixed; top: 0; left: 0; right: 0; z-index: 200; background: rgba(255,255,255,0.96); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border-light); display: flex; align-items: center; justify-content: space-between; padding: 0 40px; height: 76px; transition: box-shadow 0.3s; }
   .header.scrolled { box-shadow: var(--shadow-md); }
   .logo-mark { display: flex; align-items: center; }
-  .logo-mark img { height: 44px; width: auto; display: block; }
+  .logo-mark img { height: 56px; width: auto; display: block; }
   .header-center { font-size: 0.82rem; color: var(--ink-light); }
   .header-center a { color: var(--sky); text-decoration: none; font-weight: 600; }
   .header-btn { background: var(--sky); color: #fff; padding: 11px 26px; border-radius: 8px; font-size: 0.82rem; font-weight: 700; text-decoration: none; letter-spacing: 0.03em; transition: background 0.2s, transform 0.2s; white-space: nowrap; }
   .header-btn:hover { background: var(--sky-dark); transform: translateY(-1px); }
 
   /* HERO */
-  .hero { padding-top: 70px; background: var(--ink); position: relative; overflow: hidden; min-height: calc(100vh - 70px); display: flex; flex-direction: column; }
+  .hero { padding-top: 76px; background: var(--ink); position: relative; overflow: hidden; min-height: calc(100vh - 70px); display: flex; flex-direction: column; }
   .hero-bg { position: absolute; inset: 0; background: linear-gradient(105deg, rgba(15,31,53,0.97) 0%, rgba(15,31,53,0.85) 50%, rgba(15,31,53,0.7) 100%), url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80') center/cover no-repeat; z-index: 0; }
   .hero-grid-overlay { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.022) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.022) 1px, transparent 1px); background-size: 56px 56px; z-index: 1; pointer-events: none; }
   .hero-split { max-width: 1280px; margin: 0 auto; padding: 40px 48px 40px; display: grid; grid-template-columns: 1fr 480px; gap: 64px; align-items: center; position: relative; z-index: 2; flex: 1; width: 100%; }
@@ -57,8 +57,8 @@
   .eyebrow-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 3px rgba(22,134,74,0.3); animation: glow 2s ease infinite; flex-shrink: 0; }
   @keyframes glow { 0%,100% { box-shadow: 0 0 0 3px rgba(22,134,74,0.3); } 50% { box-shadow: 0 0 0 7px rgba(22,134,74,0.1); } }
   .eyebrow-text { font-size: 0.73rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.55); }
-  .hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(2.4rem, 3.8vw, 4rem); font-weight: 400; line-height: 1.08; color: #fff; margin-bottom: 22px; letter-spacing: -0.025em; }
-  .hero h1 em { font-style: italic; color: #7ec4f0; }
+  .hero h1 { font-family: 'Open Sans', sans-serif; font-size: clamp(2.2rem, 3.5vw, 3.6rem); font-weight: 800; line-height: 1.08; color: #fff; margin-bottom: 22px; letter-spacing: -0.03em; }
+  .hero h1 em { font-style: italic; font-weight: 700; color: #7ec4f0; }
   .hero-sub { font-size: 1rem; color: rgba(255,255,255,0.5); line-height: 1.82; margin-bottom: 36px; font-weight: 300; max-width: 520px; }
   .hero-badges { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 36px; }
   .hero-badge { display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.14); border-radius: 50px; padding: 7px 14px; font-size: 0.76rem; font-weight: 500; color: rgba(255,255,255,0.75); }
@@ -83,7 +83,7 @@
   .play-ring { width: 80px; height: 80px; border-radius: 50%; background: var(--sky); display: flex; align-items: center; justify-content: center; position: relative; z-index: 2; margin-bottom: 18px; cursor: pointer; transition: transform 0.2s; box-shadow: 0 0 0 14px rgba(26,117,187,0.15), 0 0 0 28px rgba(26,117,187,0.06); }
   .play-ring:hover { transform: scale(1.08); }
   .play-ring svg { width: 28px; height: 28px; fill: white; margin-left: 5px; }
-  .video-label { font-family: 'DM Serif Display', serif; font-size: 1.3rem; color: white; text-align: center; position: relative; z-index: 2; text-shadow: 0 2px 20px rgba(0,0,0,0.4); padding: 0 20px; }
+  .video-label { font-family: 'Open Sans', sans-serif; font-size: 1.3rem; color: white; text-align: center; position: relative; z-index: 2; text-shadow: 0 2px 20px rgba(0,0,0,0.4); padding: 0 20px; }
   .video-sublabel { font-size: 0.78rem; color: rgba(255,255,255,0.4); position: relative; z-index: 2; margin-top: 8px; font-weight: 300; }
   .video-footer { padding: 18px 22px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--border-light); background: var(--white); }
   .video-footer-text { font-size: 0.82rem; color: var(--ink-light); }
@@ -131,7 +131,7 @@
   }
   .act-card:hover .act-card-icon { transform: scale(1.08) rotate(-4deg); background: var(--sky-pale); border-color: rgba(26,117,187,0.3); }
   .act-card-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--sky); }
-  .act-card h3 { font-family: 'DM Serif Display', serif; font-size: 1.25rem; font-weight: 400; color: var(--ink); line-height: 1.25; letter-spacing: -0.015em; margin: 0; }
+  .act-card h3 { font-family: 'Open Sans', sans-serif; font-size: 1.15rem; font-weight: 700; color: var(--ink); line-height: 1.25; letter-spacing: -0.015em; margin: 0; }
   .act-card p { font-size: 0.86rem; color: var(--ink-light); line-height: 1.82; font-weight: 300; margin: 0; }
   .act-card-pill {
     display: inline-flex; align-items: center; gap: 7px;
@@ -156,8 +156,8 @@
   .section { padding: 96px 40px; }
   .container { max-width: 1200px; margin: 0 auto; }
   .eyebrow { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--sky); margin-bottom: 14px; display: block; }
-  h2 { font-family: 'DM Serif Display', serif; font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 400; line-height: 1.13; color: var(--ink); margin-bottom: 20px; letter-spacing: -0.02em; }
-  h2 em { font-style: italic; color: var(--sky); }
+  h2 { font-family: 'Open Sans', sans-serif; font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 800; line-height: 1.13; color: var(--ink); margin-bottom: 20px; letter-spacing: -0.02em; }
+  h2 em { font-style: italic; font-weight: 700; color: var(--sky); }
   .rule { width: 40px; height: 3px; background: var(--sky); border-radius: 2px; margin-bottom: 28px; }
   .section-lead { font-size: 1rem; color: var(--ink-light); line-height: 1.85; max-width: 560px; margin-bottom: 52px; font-weight: 300; }
 
@@ -199,7 +199,7 @@
   }
   .act-card:hover .act-card-icon { transform: scale(1.08) rotate(-4deg); background: var(--sky-pale); border-color: rgba(26,117,187,0.3); }
   .act-card-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--sky); }
-  .act-card h3 { font-family: 'DM Serif Display', serif; font-size: 1.25rem; font-weight: 400; color: var(--ink); line-height: 1.25; letter-spacing: -0.015em; margin: 0; }
+  .act-card h3 { font-family: 'Open Sans', sans-serif; font-size: 1.15rem; font-weight: 700; color: var(--ink); line-height: 1.25; letter-spacing: -0.015em; margin: 0; }
   .act-card p { font-size: 0.86rem; color: var(--ink-light); line-height: 1.82; font-weight: 300; margin: 0; }
   .act-card-pill {
     display: inline-flex; align-items: center; gap: 7px;
@@ -224,8 +224,8 @@
   .section { padding: 96px 40px; }
   .container { max-width: 1200px; margin: 0 auto; }
   .eyebrow { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--sky); margin-bottom: 14px; display: block; }
-  h2 { font-family: 'DM Serif Display', serif; font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 400; line-height: 1.13; color: var(--ink); margin-bottom: 20px; letter-spacing: -0.02em; }
-  h2 em { font-style: italic; color: var(--sky); }
+  h2 { font-family: 'Open Sans', sans-serif; font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 800; line-height: 1.13; color: var(--ink); margin-bottom: 20px; letter-spacing: -0.02em; }
+  h2 em { font-style: italic; font-weight: 700; color: var(--sky); }
   .rule { width: 40px; height: 3px; background: var(--sky); border-radius: 2px; margin-bottom: 28px; }
   .section-lead { font-size: 1rem; color: var(--ink-light); line-height: 1.85; max-width: 560px; margin-bottom: 52px; font-weight: 300; }
 
@@ -265,8 +265,8 @@
   }
   .why-card:hover .why-card-icon { transform: scale(1.08) rotate(-4deg); background: var(--sky-pale); border-color: rgba(26,117,187,0.3); }
   .why-card-icon svg { width: 26px; height: 26px; fill: var(--sky); }
-  .why-card-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--sky); }
-  .why-card h3 { font-family: 'DM Serif Display', serif; font-size: 1.2rem; font-weight: 400; color: var(--ink); line-height: 1.25; letter-spacing: -0.015em; margin: 0; }
+  .why-card-label { font-size: 0.63rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--sky); }
+  .why-card h3 { font-family: 'Open Sans', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--ink); line-height: 1.25; letter-spacing: -0.015em; margin: 0; }
   .why-card p { font-size: 0.86rem; color: var(--ink-light); line-height: 1.82; font-weight: 300; margin: 0; }
   .why-card-check {
     display: inline-flex; align-items: center; gap: 7px;
@@ -288,7 +288,7 @@
   .review-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--sky-dark), var(--sky)); transform: scaleX(0); transform-origin: left; transition: transform 0.35s ease; }
   .review-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: rgba(26,117,187,0.2); }
   .review-card:hover::before { transform: scaleX(1); }
-  .review-quote { position: absolute; top: 14px; right: 22px; font-family: 'DM Serif Display', serif; font-size: 4rem; color: var(--sky-pale); line-height: 1; user-select: none; }
+  .review-quote { position: absolute; top: 14px; right: 22px; font-family: 'Open Sans', sans-serif; font-size: 4rem; color: var(--sky-pale); line-height: 1; user-select: none; }
   .stars { display: flex; gap: 3px; margin-bottom: 14px; }
   .stars svg { width: 15px; height: 15px; fill: var(--gold); }
   .review-text { font-size: 0.88rem; color: var(--ink-mid); line-height: 1.78; margin-bottom: 20px; font-weight: 300; font-style: italic; }
@@ -297,7 +297,7 @@
   .review-meta { font-size: 0.74rem; color: var(--ink-light); margin-top: 3px; }
   .reviews-footer { display: flex; align-items: center; gap: 32px; flex-wrap: wrap; }
   .rating-block { display: flex; align-items: baseline; gap: 10px; }
-  .rating-num { font-family: 'DM Serif Display', serif; font-size: 3.2rem; color: var(--gold); line-height: 1; }
+  .rating-num { font-family: 'Open Sans', sans-serif; font-size: 3rem; font-weight: 800; color: var(--gold); line-height: 1; }
   .rating-info { font-size: 0.8rem; color: var(--ink-light); line-height: 1.6; }
   .google-link { display: inline-flex; align-items: center; gap: 10px; background: var(--white); border: 1.5px solid var(--border); border-radius: 8px; padding: 12px 24px; font-size: 0.82rem; font-weight: 600; color: var(--ink); text-decoration: none; transition: border-color 0.2s, box-shadow 0.2s; }
   .google-link:hover { border-color: var(--sky); box-shadow: var(--shadow-sm); }
@@ -345,7 +345,7 @@
   .process-video-label small { font-size: 0.72rem; color: var(--ink-light); font-weight: 400; margin-left: auto; }
   .process-section { background: var(--white); }
   .tab-row { display: flex; gap: 0; margin-bottom: 48px; background: var(--white); padding: 0; border-radius: 10px; width: fit-content; border: 1.5px solid var(--border); overflow: hidden; box-shadow: var(--shadow-sm); }
-  .tab-btn { padding: 14px 28px; border-radius: 0; font-family: 'DM Sans', sans-serif; font-size: 0.84rem; font-weight: 600; color: var(--ink-light); background: transparent; border: none; border-right: 1.5px solid var(--border); cursor: pointer; transition: all 0.22s; white-space: nowrap; position: relative; }
+  .tab-btn { padding: 14px 28px; border-radius: 0; font-family: 'Open Sans', sans-serif; font-size: 0.84rem; font-weight: 600; color: var(--ink-light); background: transparent; border: none; border-right: 1.5px solid var(--border); cursor: pointer; transition: all 0.22s; white-space: nowrap; position: relative; }
   .tab-btn:last-child { border-right: none; }
   .tab-btn.active { background: var(--sky); color: #fff; box-shadow: none; }
   .tab-btn.active::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 6px solid var(--sky); }
@@ -361,10 +361,10 @@
   .step-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--sky-dark), var(--sky)); transform: scaleX(0); transform-origin: left; transition: transform 0.35s ease; }
   .step-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: rgba(26,117,187,0.2); }
   .step-card:hover::before { transform: scaleX(1); }
-  .step-num { font-family: 'DM Serif Display', serif; font-size: 4rem; color: rgba(26,117,187,0.06); line-height: 1; position: absolute; top: 14px; right: 18px; font-style: italic; user-select: none; }
+  .step-num { font-family: 'Open Sans', sans-serif; font-size: 4rem; color: rgba(26,117,187,0.06); line-height: 1; position: absolute; top: 14px; right: 18px; font-style: italic; user-select: none; }
   .step-icon { width: 44px; height: 44px; background: var(--ink); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 18px; }
   .step-icon svg { width: 22px; height: 22px; fill: #fff; }
-  .step-card h4 { font-family: 'DM Serif Display', serif; font-size: 1.05rem; font-weight: 400; color: var(--ink); margin-bottom: 10px; }
+  .step-card h4 { font-family: 'Open Sans', sans-serif; font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 10px; }
   .step-card p { font-size: 0.84rem; color: var(--ink-light); line-height: 1.72; font-weight: 300; }
 
   /* GUARANTEE */
@@ -375,7 +375,7 @@
   .guarantee-card + .guarantee-card::before { content: ''; position: absolute; left: 0; top: 20%; bottom: 20%; width: 1px; background: rgba(255,255,255,0.07); }
   .g-icon { width: 54px; height: 54px; border-radius: 50%; background: rgba(26,117,187,0.2); border: 1px solid rgba(26,117,187,0.35); display: flex; align-items: center; justify-content: center; }
   .g-icon svg { width: 24px; height: 24px; fill: #7ec4f0; }
-  .guarantee-card h4 { font-family: 'DM Serif Display', serif; font-size: 1.05rem; font-weight: 400; color: white; }
+  .guarantee-card h4 { font-family: 'Open Sans', sans-serif; font-size: 1rem; font-weight: 700; color: white; }
   .guarantee-card p { font-size: 0.78rem; color: rgba(255,255,255,0.38); line-height: 1.6; font-weight: 300; }
 
   /* ABOUT */
@@ -393,7 +393,7 @@
   .about-visual-play { width: 72px; height: 72px; border-radius: 50%; background: var(--sky); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.2s; z-index: 2; box-shadow: 0 0 0 14px rgba(26,117,187,0.15); }
   .about-visual-play:hover { transform: scale(1.08); }
   .about-visual-play svg { width: 28px; height: 28px; fill: white; margin-left: 5px; }
-  .about-visual-label { font-family: 'DM Serif Display', serif; font-size: 1.15rem; color: white; text-align: center; position: relative; z-index: 2; margin-top: 18px; }
+  .about-visual-label { font-family: 'Open Sans', sans-serif; font-size: 1.1rem; font-weight: 700; color: white; text-align: center; position: relative; z-index: 2; margin-top: 18px; }
   .about-visual-sub { font-size: 0.76rem; color: rgba(255,255,255,0.35); position: relative; z-index: 2; margin-top: 6px; font-weight: 300; }
   .about-vbadge { position: absolute; top: 20px; left: 20px; background: rgba(255,255,255,0.95); border-radius: 8px; padding: 8px 14px; font-size: 0.73rem; font-weight: 700; color: var(--sky); z-index: 3; }
 
@@ -402,8 +402,8 @@
   .cta-inner { max-width: 640px; margin: 0 auto; background: var(--ink); border-radius: 20px; padding: 64px 56px; position: relative; overflow: hidden; }
   .cta-inner::before { content: ''; position: absolute; top: -80px; right: -80px; width: 320px; height: 320px; background: radial-gradient(circle, rgba(26,117,187,0.22) 0%, transparent 65%); pointer-events: none; }
   .cta-inner .eyebrow { color: rgba(255,255,255,0.35); position: relative; z-index: 2; }
-  .cta-inner h2 { color: white; margin-bottom: 16px; position: relative; z-index: 2; font-size: clamp(1.9rem, 3vw, 2.7rem); }
-  .cta-inner h2 em { color: #7ec4f0; }
+  .cta-inner h2 { color: white; margin-bottom: 16px; position: relative; z-index: 2; font-size: clamp(1.6rem, 2.6vw, 2.2rem); font-weight: 800; }
+  .cta-inner h2 em { font-style: italic; color: #7ec4f0; }
   .cta-inner p { color: rgba(255,255,255,0.48); font-size: 0.95rem; line-height: 1.78; margin-bottom: 40px; font-weight: 300; position: relative; z-index: 2; }
   .cta-inner .btn-primary { position: relative; z-index: 2; }
   .cta-footnote { display: block; margin-top: 20px; font-size: 0.79rem; color: rgba(255,255,255,0.28); position: relative; z-index: 2; }
@@ -454,7 +454,7 @@
     .footer-inner { flex-direction: column; text-align: center; }
     .trust-strip { display: none; }
     .services-band { padding: 56px 20px; }
-    .logo-mark img { height: 36px; }
+    .logo-mark img { height: 44px; }
     .tab-row { flex-direction: column; border-radius: 12px; width: 100%; }
   }
 </style>
@@ -518,13 +518,13 @@
 <div class="marquee-bar">
   <div class="marquee-track">
     <span class="marquee-item"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>5.0 Stars · 300+ Google Reviews</span>
-    <span class="marquee-item"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>6-Year Workmanship Warranty</span>
+    <span class="marquee-item"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>7-Year Workmanship Warranty</span>
     <span class="marquee-item"><svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Live GPS Tracking on Install Day</span>
 
     <span class="marquee-item"><svg viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>Family Business · 20+ Years Melbourne</span>
     <span class="marquee-item"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>Fixed Price · No Surprises</span>
     <span class="marquee-item"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>5.0 Stars · 300+ Google Reviews</span>
-    <span class="marquee-item"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>6-Year Workmanship Warranty</span>
+    <span class="marquee-item"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>7-Year Workmanship Warranty</span>
     <span class="marquee-item"><svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Live GPS Tracking on Install Day</span>
 
     <span class="marquee-item"><svg viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>Family Business · 20+ Years Melbourne</span>
@@ -612,17 +612,17 @@
     </div>
     <div id="tab-pre" class="tab-content active">
       <div class="steps-grid">
-        <div class="step-card"><div class="step-num">1</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div><h4>Deposit & Booking Secured</h4><p>Once your 50% deposit is received, we lock in your installation date and begin sourcing your equipment and coordinating your trade team.</p></div>
-        <div class="step-card"><div class="step-num">2</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg></div><h4>Pre-Install Confirmation</h4><p>A day before, you'll receive a confirmation message — who's coming, what to expect, and how to prepare so the day runs smoothly.</p></div>
-        <div class="step-card"><div class="step-num">3</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div><h4>Morning of — Live Tracking</h4><p>On the morning of your installation, you'll receive a text with your technician's ETA and a live GPS tracking link. No waiting around.</p></div>
-        <div class="step-card"><div class="step-num">4</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></div><h4>Any Questions? Just Call</h4><p>Our team are always available by phone up to installation day. Questions about scope, access, or what to move — just call us anytime.</p></div>
+        <div class="step-card"><div class="step-num">1</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div><h4>Personalised Consultation</h4><p>We visit your home to understand your needs and tailor a heating and cooling solution — keeping you and your family comfortable year-round.</p></div>
+        <div class="step-card"><div class="step-num">2</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div><h4>Deposit & Booking Secured</h4><p>Once your 50% deposit is received, we lock in your installation date and begin sourcing your equipment and coordinating your trade team.</p></div>
+        <div class="step-card"><div class="step-num">3</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg></div><h4>Pre-Install Confirmation</h4><p>A day before, you'll receive a confirmation message — who's coming, what to expect, and how to prepare so the day runs smoothly.</p></div>
+        <div class="step-card"><div class="step-num">4</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div><h4>Morning of — Live Tracking</h4><p>On the morning of your installation, you'll receive a text with your technician's ETA and a live GPS tracking link. No waiting around.</p></div>
       </div>
       <div class="steps-carousel-wrap" id="steps-carousel-pre">
         <div class="steps-carousel-track">
-          <div class="step-card"><div class="step-num">1</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div><h4>Deposit & Booking Secured</h4><p>Once your 50% deposit is received, we lock in your installation date and begin sourcing your equipment and coordinating your trade team.</p></div>
-          <div class="step-card"><div class="step-num">2</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg></div><h4>Pre-Install Confirmation</h4><p>A day before, you'll receive a confirmation message — who's coming, what to expect, and how to prepare so the day runs smoothly.</p></div>
-          <div class="step-card"><div class="step-num">3</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div><h4>Morning of — Live Tracking</h4><p>On the morning of your installation, you'll receive a text with your technician's ETA and a live GPS tracking link. No waiting around.</p></div>
-          <div class="step-card"><div class="step-num">4</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></div><h4>Any Questions? Just Call</h4><p>Our team are always available by phone up to installation day. Questions about scope, access, or what to move — just call us anytime.</p></div>
+          <div class="step-card"><div class="step-num">1</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div><h4>Personalised Consultation</h4><p>We visit your home to understand your needs and tailor a heating and cooling solution — keeping you and your family comfortable year-round.</p></div>
+          <div class="step-card"><div class="step-num">2</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div><h4>Deposit & Booking Secured</h4><p>Once your 50% deposit is received, we lock in your installation date and begin sourcing your equipment and coordinating your trade team.</p></div>
+          <div class="step-card"><div class="step-num">3</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg></div><h4>Pre-Install Confirmation</h4><p>A day before, you'll receive a confirmation message — who's coming, what to expect, and how to prepare so the day runs smoothly.</p></div>
+          <div class="step-card"><div class="step-num">4</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div><h4>Morning of — Live Tracking</h4><p>On the morning of your installation, you'll receive a text with your technician's ETA and a live GPS tracking link. No waiting around.</p></div>
         </div>
         <div class="steps-carousel-dots">
           <button class="steps-carousel-dot active" data-track="steps-carousel-pre" data-index="0"></button>
@@ -659,14 +659,14 @@
         <div class="step-card"><div class="step-num">1</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg></div><h4>Certifications Emailed Immediately</h4><p>All trade certifications and compliance paperwork emailed once the job is complete and final payment received.</p></div>
         <div class="step-card"><div class="step-num">2</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></div><h4>Follow-Up Call</h4><p>A team member calls you a few days after installation to make sure everything is running perfectly and answer any questions.</p></div>
         <div class="step-card"><div class="step-num">3</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg></div><h4>A Client for Life</h4><p>We don't disappear after the job. Questions 2 weeks later or a service call 5 years later — our team is always available for you.</p></div>
-        <div class="step-card"><div class="step-num">4</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg></div><h4>6-Year Workmanship Warranty</h4><p>Every installation is backed by our 6-year workmanship warranty. If anything isn't right with our work, we fix it — no arguments, no charge.</p></div>
+        <div class="step-card"><div class="step-num">4</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg></div><h4>7-Year Workmanship Warranty</h4><p>Every installation is backed by our 7-year workmanship warranty. If anything isn't right with our work, we fix it — no arguments, no charge.</p></div>
       </div>
       <div class="steps-carousel-wrap" id="steps-carousel-post">
         <div class="steps-carousel-track">
           <div class="step-card"><div class="step-num">1</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg></div><h4>Certifications Emailed Immediately</h4><p>All trade certifications and compliance paperwork emailed once the job is complete and final payment received.</p></div>
           <div class="step-card"><div class="step-num">2</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></div><h4>Follow-Up Call</h4><p>A team member calls you a few days after installation to make sure everything is running perfectly and answer any questions.</p></div>
           <div class="step-card"><div class="step-num">3</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg></div><h4>A Client for Life</h4><p>We don't disappear after the job. Questions 2 weeks later or a service call 5 years later — our team is always available for you.</p></div>
-          <div class="step-card"><div class="step-num">4</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg></div><h4>6-Year Workmanship Warranty</h4><p>Every installation is backed by our 6-year workmanship warranty. If anything isn't right with our work, we fix it — no arguments, no charge.</p></div>
+          <div class="step-card"><div class="step-num">4</div><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg></div><h4>7-Year Workmanship Warranty</h4><p>Every installation is backed by our 7-year workmanship warranty. If anything isn't right with our work, we fix it — no arguments, no charge.</p></div>
         </div>
         <div class="steps-carousel-dots">
           <button class="steps-carousel-dot active" data-track="steps-carousel-post" data-index="0"></button>
@@ -810,7 +810,7 @@
 
 <div class="guarantee-section">
   <div class="guarantee-grid">
-    <div class="guarantee-card reveal"><div class="g-icon"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div><h4>6-Year Warranty</h4><p>All workmanship backed by our 6-year guarantee</p></div>
+    <div class="guarantee-card reveal"><div class="g-icon"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div><h4>7-Year Warranty</h4><p>All workmanship backed by our 7-year guarantee</p></div>
     <div class="guarantee-card reveal reveal-delay-1"><div class="g-icon"><svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg></div><h4>Fixed Price</h4><p>Your quoted price is your final price — guaranteed</p></div>
     <div class="guarantee-card reveal reveal-delay-2"><div class="g-icon"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg></div><h4>VBA Licensed</h4><p>Gas, refrigeration & electrical — all fully licensed</p></div>
     <div class="guarantee-card reveal reveal-delay-3"><div class="g-icon"><svg viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div><h4>Family Business</h4><p>20+ years of trusted service in Melbourne's north</p></div>
